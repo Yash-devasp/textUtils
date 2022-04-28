@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function About() {
   const [btnText, setbtnText] = useState("Dark");
@@ -31,8 +31,8 @@ export default function About() {
   return (
     <div className="container p-2" style={myStyle}>
       <div className="list-group mt-4">
-        <Link
-          to="/"
+        <a
+          href="/"
           className="list-group-item list-group-item-action d-flex gap-3 py-3"
           aria-current="true"
           style={myStyle}
@@ -53,9 +53,9 @@ export default function About() {
             </div>
             <small className="opacity-50 text-nowrap">now</small>
           </div>
-        </Link>
-        <Link
-          to="/"
+        </a>
+        <a
+          href="/"
           className="list-group-item list-group-item-action d-flex gap-3 py-3"
           aria-current="true"
           style={myStyle}
@@ -77,9 +77,9 @@ export default function About() {
             </div>
             <small className="opacity-50 text-nowrap">3d</small>
           </div>
-        </Link>
-        <Link
-          to="/"
+        </a>
+        <a
+          href="/"
           className="list-group-item list-group-item-action d-flex gap-3 py-3"
           aria-current="true"
           style={myStyle}
@@ -100,7 +100,7 @@ export default function About() {
             </div>
             <small className="opacity-50 text-nowrap">1w</small>
           </div>
-        </Link>
+        </a>
       </div>
       <button className="mt-2 btn btn-primary" onClick={handleOnClick}>
         Enable {btnText} Mode
